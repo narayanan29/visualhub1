@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>
+            Change source file
+        </title>
+    </head>
+    <body>
+        <h1>Light on off script</h1>
+        <p>Javascript changes the value of the source attribute of image</p>
+        <script>
+            function light(mn){
+                var pc;
+                if(mn==0){
+                    pc="C:/Users/MASTER 4/Desktop/visualpro1/visualhub1/pic_bulboff.gif";
+                }else{
+                    pc="C:/Users/MASTER 4/Desktop/visualpro1/visualhub1/pic_bulbon.gif";
+                }
+            document.getElementById("Image").src=pc;
+            }
+        </script>
+        <img id="Image" src="C:\Users\MASTER 4\Desktop\visualpro1\visualhub1\pic_bulboff.gif" weight="100" height="180">
+        <p>
+            <button type="button" onclick="light(1)">Light on</button>
+            <button type="button" onclick="light(0)">light off</button>
+        </p>
+    </body>
+</html>
