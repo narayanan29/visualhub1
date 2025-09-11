@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head>
+    <title>
+        class attributes
+    </title>
+</head>
+<body>
+    <h1>Use the class attributes in html</h1>
+    <p>click the button to delete all headings</p>
+    <h1 class="kk">london is the capital for england</h1>
+    <p>bla bla bls bls bls fg bgbd fgdg dfs sfsf </p>
+    <h1 class="kk">paris is the capital for france</h1>
+     <p>bla bla bls bls bls fg bgbd fgdg dfs sfsf </p>
+     <h1 class="kk">tokyo is the capital for japan
+     </h1> <p>bla bla bls bls bls fg bgbd fgdg dfs sfsf </p>
+     <button onclick="myfun();">hide</button>
+     <script>
+        function myfun(){
+            var x=document.getElementsByClassName("kk");
+            for(var i=0;i<x.length;i++){
+                x[i].style.display="none";
+            }
+        }
+     </script>
+</body>
