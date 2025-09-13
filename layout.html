@@ -1,0 +1,84 @@
+<!DOCTYPE html><html>
+    <head>
+
+        <title>CSS template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color:#666;
+                padding:30px;
+                text-align:center;
+                font-size:35px;
+                color:white;
+            }
+            nav{
+                background:#ccc;
+                float:left;
+                width:20%;
+                height:300px;
+                color:white;
+            }
+            nav ul{
+                list-style-type:none;
+                padding:0;
+            }
+            article{
+                float:left;
+                padding:20px;
+                width:80%;
+                background-color:#f1f1f1;
+                height:300px;
+            }
+            section::after{
+                content:" ";
+                display:table;
+                clear:both;
+            }
+            footer{
+                background-color:#777;
+                color:white;
+                padding:10px;
+                text-align:center;
+                font-size:25px;
+            }
+            @media (max-width:600px){
+                nav,article{
+                    width:100%;
+                    height:auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Css layout float
+        </h2>
+        <p>In this example we create a header,two columns boxes and a footer</p>
+        <header>
+            <h2>cities</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>London</h1>
+                <p>The Greater London Authority (GLA), colloquially known by the metonym City Hall, is the devolved regional governance body of Greater London, England. It consists of two political branches: an executive Mayor (currently Sadiq Khan) and the 25-member London Assembly, which serves as a means of checks and balances on the Mayor. The authority was established in 2000, following a local referendum, and derives most of its powers from the Greater London Authority Act 1999 and the Greater London Authority Act 2007.
+It is a strategic regional authority, with powers over transport, policing, economic development, and fire and emergency planning. Three functional bodies —Transport for London, the Mayor's Office for Policing and Crime, and the London Fire Commissioner— are responsible for delivery of services in these areas. The planning policies of the Mayor of London are detailed in a statutory London Plan which is regularly updated and published
+The Greater London Authority is mostly funded by direct government grant and it is also a precepting authority, with some money collected with local Council Tax. The GLA is unique in the British devolved and local government system, in terms of structure (it uses a presidential system-esque model), elections and selection of powers. The authority was established to replace a range of joint boards and quangos and provided an elected upper tier of local government in Greater London for the first time since the abolition of the Greater London Council in 1986.</p>
+            </article>
+        </section>
+        <footer><p>footer</p></footer>
+    </body>
+</html>
