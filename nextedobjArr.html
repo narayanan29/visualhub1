@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>
+            Array/object LIST
+        </title>
+    </head>
+    <body>
+        <p id="kk"></p>
+        <script>
+            let x=" ";
+            const myObj={
+                name:"narayanan",
+                age:20,
+                skills:[{name:"English communication",types:["Confident","Smilyface","Disciplined"]},
+            {name:"Javaprogramming",types:["object","methods","classes"]},
+        {name:"project",types:["miniprojects","webproject","mainprojects"]}]
+            };
+            for(let i in myObj.skills){
+                x+="<h2>"+myObj.skills[i].name+"</h2>";
+                    for(let j in myObj.skills[i].types){
+                        x+="<ul>"+"<li>"+myObj.skills[i].types[j]+"</li>"+"<br>"+"</ul>";
+                    }
+            }
+            document.getElementById("kk").innerHTML=x;
+        </script>
+    </body>
+</html>
