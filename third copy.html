@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>comparision</title>
+    </head>
+    <body>
+        <h1>Javascript comparision operator</h1>
+        <p>Click the button: to input your age</p>
+        <h id="oo"></h>
+        <input id="age" value="18"/>
+        <button onclick="Myfun()">try</button>
+        <script>
+            function Myfun(){
+            let voteable;
+            let age=Number(document.getElementById("age").value);
+            if(isNaN(age)){
+                voteable="Please enter the input";
+            }else{
+                voteable=(age<18)?"Too young" :"Eligible to vote";
+            }
+            document.getElementById("oo").innerHTML=voteable;
+        }
+        </script>
+    </body>
+</html>
