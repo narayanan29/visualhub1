@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trycatch</title>
+</head>
+<body style="background-color:aqua">
+    <h1>Try Catch Finally</h1>
+    <p><i>please enter the value 1 to 15</i></p>
+    <input id="kk" type="text">
+    <button type="button" onclick="myFun()">click to test</button>
+    <p id="ii"></p>
+    <script>
+        function myFun(){
+        const message=document.getElementById("ii");
+        message.innerHTML="";
+        let x=document.getElementById("kk").value;
+        try{
+            if(x.trim()=="") throw "empty";
+            if(isNaN(x)) throw "not a number";
+            x=Number(x);
+            if(x>6) throw "its greader than 6 ";
+            if(x<5) throw "its less than 5";
+        }catch(err){
+            message.innerHTML="Input : "+err;
+        }finally{
+            document.getElementById("kk").value="";
+        }}
+    </script>
+</body>
+</html>
